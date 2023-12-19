@@ -1,0 +1,46 @@
+.hover-menu {
+  // position: relative;
+  &__image {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+  &__option {
+    min-width: 10rem;
+    position: absolute;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    filter: drop-shadow(0rem 0.4rem 0.4rem rgba(102, 102, 102, 0.3));
+    z-index: 1111;
+    transform: translateX(-50%);
+  }
+  &__more {
+    width: 0.6rem;
+    height: 2rem;
+    position: absolute;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}
+
+.triangle {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  bottom: -0.7rem;
+  background: var(--white);
+  right: 1.8rem;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.menu-up {
+  top: -8rem;
+}
+.menu-down {
+  margin-top: 1rem;
+}

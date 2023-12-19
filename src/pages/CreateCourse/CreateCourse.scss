@@ -1,0 +1,71 @@
+.create-course {
+  position: relative;
+  @media screen and (max-width: 964px) {
+    position: unset;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  &__wrapper {
+    padding-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 3.5rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem dashed var(--yellow);
+    border-radius: 0.5rem;
+    padding: 2.1rem 3rem 3.5rem 3rem;
+    row-gap: 4.2rem;
+  }
+  &__section {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &__color {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      & > input {
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+  &__submit {
+    align-self: center;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    border: none;
+    background: var(--yellow);
+    width: 21rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}

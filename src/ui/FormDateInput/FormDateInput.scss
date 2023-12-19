@@ -1,0 +1,86 @@
+.form-date-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+  &__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0rem 0.4rem 0.4rem rgba(102, 102, 102, 0.3));
+    }
+  }
+  &__date-picker {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #ccc;
+    background: var(--white);
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    & > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      transition: all 0.2s ease;
+    }
+
+    &--error {
+      border: 0.1rem solid var(--error) !important;
+    }
+    &--success {
+      border: 0.1rem solid var(--success) !important;
+    }
+    &--active {
+      border: 0.1rem solid var(--purple);
+    }
+  }
+
+  &__blank {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 4.5rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+}
+
+// .time-field{
+//   min-width: 20rem !important;
+// }
+
+.rdp {
+  --rdp-cell-size: 3rem !important;
+  --rdp-caption-font-size: 1.6rem !important;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 0.2rem solid var(--rdp-accent-color);
+  --rdp-outline-selected: 0.3rem solid var(--rdp-accent-color);
+  margin: 0 !important;
+}
+
+.rdb-button {
+  border: 0.2rem solid transparent;
+}
+.rdb-nav_icon {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+}

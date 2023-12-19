@@ -1,0 +1,58 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #ccc;
+    font-size: 1.6rem;
+    color: #666;
+    cursor: text;
+
+    &__error {
+      border: 0.1rem solid var(--error) !important;
+    }
+    &__success {
+      border: 0.1rem solid var(--success) !important;
+    }
+
+    &::placeholder {
+      font-size: inherit;
+      color: inherit;
+    }
+
+    &:focus {
+      border: 0.1rem solid var(--purple);
+    }
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    color: #666;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0rem 0.4rem 0.4rem rgba(102, 102, 102, 0.3));
+    }
+  }
+}
+
+.info {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 8rem;
+
+  &__error {
+    color: var(--error);
+  }
+  &__success {
+    color: var(--success);
+  }
+}

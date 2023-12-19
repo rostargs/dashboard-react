@@ -1,0 +1,78 @@
+.course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  min-width: 20rem;
+  width: 100%;
+  height: 15rem;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 5;
+
+  &__circular{
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  & svg{
+    z-index: -1;
+  }
+  &__completed{
+    font-size: 1.6rem;
+    font-weight:600;
+    color: var(--success);
+    padding-bottom: 2rem;
+    padding-top: 0.6rem;
+  }
+
+  &__title {
+    line-height: 2.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    height: 2.7rem;
+  }
+  &__tasks {
+    padding-top: 0.6rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    padding-bottom: 2rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+  &__right {
+    z-index: 2;
+    max-width: 6rem;
+  }
+}
+
+.left-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8rem;
+  height: 4rem;
+}
+.right-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 13.5rem;
+  height: 8rem;
+}
+.bg-color {
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;
+  border-radius: 2rem;
+}

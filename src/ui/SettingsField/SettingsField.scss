@@ -1,0 +1,14 @@
+.settings-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(54, 159, 255, 0.45);
+    padding: 1.8rem 2.5rem;
+    border-radius: 0.9rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: capitalize;
+    max-height: 7.4rem;
+}

@@ -1,0 +1,66 @@
+.login-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  gap: 0.7rem;
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: capitalize;
+
+    @media screen and (max-width: 964px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__input {
+    height: 4rem;
+    width: 100%;
+    background: var(--salat);
+    padding: 1.3rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 964px) {
+      font-size: 1.2rem;
+      &::placeholder {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+  &__error {
+    position: absolute;
+    top: 6.7rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--error);
+    padding-top: 0.2rem;
+
+    &::before {
+      content: "⚠";
+      padding-right: 0.4rem;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.forgot-password {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}

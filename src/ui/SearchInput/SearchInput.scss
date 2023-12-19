@@ -1,0 +1,24 @@
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    & > input {
+      max-width: 7rem;
+      background: inherit;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--disable);
+    }
+    label {
+      & > img {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+.security{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.logout-btn{
+    background: var(--purple);
+    padding: 1rem 2rem;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.delete-account-btn{
+    background: var(--error);
+    padding: 1rem 2rem;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--background-one);
+  font-size: 1.6rem;
+}
+html {
+  font-size: 10px;
+}
+
+:root {
+  --light-blue: #369fff;
+  --primary: #2d68a2;
+  --black: #181a1b;
+  --placeholder: #9ea3a9;
+  --disable: #bdbdbd;
+  --sub-black: #697077;
+  --background-one: #f7f7f8;
+  --background-two: #eff0f1;
+  --white: #ffffff;
+  --sub-black-v2: #838a91;
+  --stroke: #e9ebec;
+  --black-font: #303030;
+  --yellow: #fabb5c;
+  --error: #eb5757;
+  --success: #75cc6d;
+  --purple: #7a5cfa;
+  --completed: rgba(63, 105, 145, 0.8);
+  --login-gradient: linear-gradient(
+    90deg,
+    rgba(0, 131, 176, 0.37) 0%,
+    rgba(219, 0, 158, 0.32) 100%
+  );
+  --salat: #c0dbea;
+  --grey-settings: #4C535F;
+  --grey-inpt: #e0e4ec;
+  --inpt-placeholder: rgba(76, 83, 95, 1);
+}
+
+$tablet: 964px;
+$small-tablet: 668px;
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 1124px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: $small-tablet) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 6px;
+  }
+}

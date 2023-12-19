@@ -1,0 +1,80 @@
+.notification-message[datatype-isread="true"] {
+  --message-bg: #c9c9c9;
+  --text-color: rgba(33, 33, 33, 0.95);
+}
+.notification-message[datatype-isread="false"] {
+  --message-bg: rgba(33, 33, 33, 0.95);
+  --text-color: #fff;
+}
+.notification-message {
+  width: 100%;
+  padding: 2.5rem 1.8rem;
+  background: var(--message-bg) !important;
+  border-radius: 0.8rem;
+  position: relative;
+  display: grid;
+  flex-direction: column;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    & > img {
+      width: 2.2rem;
+    }
+  }
+  &__date {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  &__course{
+    padding: 1rem 2rem;
+    & > p{
+      padding-top: 2rem;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+  }
+  &__type {
+    font-weight: 600;
+    font-size: 1.5rem;
+    &--congratulations {
+      color: #2b5;
+    }
+    &--fail {
+      color: #e44;
+    }
+  }
+  &__delete {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+  &__salute {
+    color: var(--text-color) !important;
+    font-size: 1.2rem;
+    padding: 1rem 7rem 1rem 4.2rem;
+    font-weight: 500;
+  }
+  &__children {
+    padding: 0 2rem 0 4.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__read {
+    justify-self: right;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #222;
+    background: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.9rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
+}

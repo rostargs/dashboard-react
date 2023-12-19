@@ -1,0 +1,29 @@
+.stat{
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    background-color: rgba(54, 159, 255, 0.1);
+    border-radius: 2rem;
+
+    &__name{
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #8EA3B7;
+    }
+    
+    &__progress{
+        display: flex;
+        align-items: center;
+        padding-top: 2.6rem;
+        font-weight: 700;
+        font-size: 4rem;
+        color: #006ED3;
+        justify-content: space-between;
+
+        &::before{
+            content: '';
+            width: 0.4rem;
+            height: 3rem;
+            border-radius: 2rem;
+            background: #006ED3;
+        }
+    }
+}

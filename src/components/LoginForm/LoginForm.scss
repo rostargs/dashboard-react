@@ -1,0 +1,91 @@
+.login-form {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  row-gap: 1.6rem;
+  flex-direction: column;
+  width: 40%;
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
+
+  &__logo {
+    width: 12rem;
+    @media screen and (max-width: 964px) {
+      width: 11rem;
+    }
+  }
+  &__greeting {
+    font-weight: 400;
+    letter-spacing: 0.048rem;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-size: 3.8rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 964px) {
+      font-size: 3rem;
+    }
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    @media screen and (max-width: 964px) {
+      gap: 1.8rem;
+    }
+
+    @media screen and (max-width: 668px) {
+      gap: 1.3rem;
+    }
+  }
+  &__submit {
+    padding: 1.1rem 3.2rem;
+    background: #d885a3;
+    border-radius: 2.3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    display: inline-flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-top: 1.4rem;
+
+    @media screen and (max-width: 964px) {
+      font-size: 1.4rem;
+    }
+  }
+  &__error {
+    font-size: 1.4rem;
+    color: var(--error);
+    font-weight: 500;
+
+    &::after {
+      content: "❗";
+    }
+  }
+  &__create-account {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 1.5rem;
+
+    @media screen and (max-width: 964px) {
+      font-size: 1.1rem;
+    }
+
+    & > a {
+      padding-left: 1.5rem;
+      color: #d885a3;
+
+      @media screen and (max-width: 964px) {
+        padding-left: 0.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.settings-link {
+  padding: 0 2rem;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--grey-inpt);
+
+  @media screen and (max-width: 420px){
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+  }
+  @media screen and (max-width: 300px){
+    padding: 0 1rem;
+  }
+  &:hover{
+    color: var(--primary);
+  }
+  &-active{
+    color: var(--primary);
+    &::after {
+      position: absolute;
+      content: "";
+      height: 0.2rem;
+      width: 100%;
+      background: var(--primary);
+      top: 3.2rem;
+      z-index: 2;
+      left: 0;
+      @media screen and (max-width: 420px){
+        top: 2.9rem;
+      }
+    }
+  }
+}

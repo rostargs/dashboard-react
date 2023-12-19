@@ -1,0 +1,63 @@
+.account-settings {
+  display: flex;
+  flex-direction: column;
+
+  &__dash {
+    margin-top: 4rem;
+    height: 0.2rem;
+    width: 100%;
+    background: var(--grey-inpt);
+    border: none;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 1.4rem;
+  }
+  &__buttons{
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__submit{
+    padding: 1.5rem 4rem;
+    background: var(--primary);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    cursor: pointer;
+  }
+  &__reset{
+    background: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--grey-settings);
+    cursor: pointer;
+  }
+
+  &-inputs {
+    &__label {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--grey-settings);
+      text-transform: capitalize;
+    }
+    &__input {
+      padding: 1.3rem 1.5rem;
+      border-radius: 0.8rem;
+      border: 0.1rem solid var(--grey-inpt);
+      background: linear-gradient(0deg, #edf2f6 0%, #edf2f6 100%), #fff;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--inpt-placeholder);
+
+      &::placeholder {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--inpt-placeholder);
+      }
+    }
+  }
+}

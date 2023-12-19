@@ -1,0 +1,13 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 888;
+  background: rgba(59, 67, 76, 0.9);
+
+  @media screen and (max-width: 964px) {
+    z-index: 33;
+  }
+}
